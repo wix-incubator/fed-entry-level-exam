@@ -78,7 +78,7 @@ b. Add component tests (using `jest`) to your work from *part 1*.
 
 ## General notes
 - Test your work well. Think of edge cases. Think of how users will use it, and make sure your work is of high quality
-- If you have any questions regarding the task itself or it's environment, feel free to ask in the exam's e-mail. For general coding / technology questions, please consult stack overflow, forums and other sources of your choice
+- If you have any questions regarding the task itself or its environment, feel free to ask in the exam's e-mail. For general coding / technology questions, please consult stack overflow, forums and other sources of your choice.
 
 
 ## Submitting
