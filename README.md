@@ -58,22 +58,22 @@ Friendly reminder to commit and push after completing this step.
 b. There is a need to find tickets before/after a certain date, and our designer is on vacation to design proper UI for it. Change the search functionality so that when searching for `after:27/09/2019 api`, only tickets matching the word "api" created *after* 27/09/2019 will show. Add support for `before:[DATE]` and `from:[EMAIL]` as well.  
 Friendly reminder to commit and push after completing this step.
 
-c. We're showing only 20 tickets but agents can swear there are more. Solve this problem. Keep it mind the number of tickets is planned to grow exponentially very soon so make sure to think of a proper solution.  
+c. We're showing only 20 tickets but agents can swear there are more. Solve this problem. Keep in mind the number of tickets is planned to grow exponentially very soon so make sure to think of a proper solution.  
 Friendly reminder to commit and push after completing this step.
 
 ### Part 3 - Your extra touch
 Think of a small addition to this project and make it happen. If you need inspiration, you can check out our real ticketing app at https://wix.com/wixanswers and grab some ideas from there ;)
 It should involve adding something to the UI, or server (or both!).
-A good rule of thumb for the effort here is that it should not exceed the time that took you to perform Part 2.
+A good rule of thumb for the effort here is that it should not exceed the time that it took you to perform Part 2.
 
-*Note:* this is step is also mandatory.  
+*Note:* this step is also mandatory.  
 Friendly reminder to commit and push after completing this part.
 
 ### Part 4 - [Previous experience only] Automated testing
 **If you do not have previous experience in web development, you can skip this part.**
 Otherwise, it is mandatory. 
 
-a. Add at least 3 automated tests browser using puppeteer, testing key features of your choice.
+a. Add at least 3 automated browser tests using puppeteer, testing key features of your choice.
 b. Add component tests (using `jest`) to your work from *part 1*.
 
 
