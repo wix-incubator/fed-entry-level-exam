@@ -38,7 +38,7 @@ Friendly reminder to commit and push after completing this step.
 
 b. Some agents can't answer all tickets, and want an option to hide some.
 Add a hide button that will hide the tickets from view. Make sure there is an option to restore it as well:  
-![hide tickets](https://d2x3xhvgiqkx42.cloudfront.net/3d412e82-d97e-487e-b1a3-41a6bd24a05b/b9bd9ddb-c0bf-4b55-888e-747f0d6524c8/2019/09/27/233c0170-fd67-4fb5-92c1-54de14d71350/ b653f595-a0b7-4233-9259-a8b3d8d1d271.gif)  
+![hide tickets](https://d2x3xhvgiqkx42.cloudfront.net/3d412e82-d97e-487e-b1a3-41a6bd24a05b/b9bd9ddb-c0bf-4b55-888e-747f0d6524c8/2019/09/27/233c0170-fd67-4fb5-92c1-54de14d71350/b653f595-a0b7-4233-9259-a8b3d8d1d271.gif)  
 Friendly reminder to commit and push after completing this step.
 
 c. Our ticket's data *might* also contain labels (tags), but we're not making use of them in our UI. Fix that by adding the labels according to the following design below. PS: feel free to add more labels to the data (data.json) if you need.
