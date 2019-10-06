@@ -19,7 +19,7 @@ While no previous background is required to complete this task or to apply to th
 5. Install the project dependencies by running `npm install` from the project's directory (using a terminal)
 6. Run the project by running `npm start`
 
-You should now have the development version running on your computer and accessible via http://localhost:3001
+You should now have the development version running on your computer and accessible via http://localhost:3000
 
 ## Tasks
 
