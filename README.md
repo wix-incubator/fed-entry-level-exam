@@ -64,9 +64,9 @@ Friendly reminder to commit and push after completing this step.
 ### Part 3 - Your extra touch
 Think of a small addition to this project and make it happen. If you need inspiration, you can check out our real ticketing app at https://wix.com/wixanswers and grab some ideas from there ;)
 It should involve adding something to the UI, or server (or both!).
-A good rule of thumb for the effort here is that it should not exceed the time that took you to perform Part 2.
+A good rule of thumb for the effort here is that it should not exceed the time that it took you to perform Part 2.
 
-*Note:* this is step is also mandatory.  
+*Note:* this step is also mandatory.  
 Friendly reminder to commit and push after completing this part.
 
 ### Part 4 - [Previous experience only] Automated testing
