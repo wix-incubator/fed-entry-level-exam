@@ -12,7 +12,7 @@ While no previous background is required to complete this task or to apply to th
 - Node.js
 
 ## Getting Started
-1. Make sure you have an [GitHub](https://github.com) account
+1. Make sure you have a [GitHub](https://github.com) account
 2. Go [here](https://github.com/new/import) and import this repository into your account. Make sure to select the **private** option
 3. [Clone](https://try.github.io/) your new repository to your computer
 4. Make sure you have *Node.js* 10 or higher and *npm* 6 or higher installed
@@ -55,10 +55,10 @@ d. Step *a* wasn't enough - some tickets have long content. Add a show more / sh
 a. Agents are complaining that our search functionality isn't working properly. They gave the example that when searching for "wix stores", the ticket titled "Search bar for my wix store" (id `6860d043-f551-58c8-84d6-f9e6a8cb0cb2`) is not returned. Checking the data, that ticket does exist.. Find the issue and fix it.  
 Friendly reminder to commit and push after completing this step.
 
-b. There is a need to find tickets before/after a certain date, and our designer is on vacation to design proper UI for it. Change the search functionality so that when searching for `after:27/09/2019 api`, only tickets matching the word "api" created *after* 27/09/2019 will show. Add support for `before:[DATE]` and `from:[EMAIL]` as well.  
+b. There is a need to find tickets created before/after a certain date, and our designer is on vacation to design proper UI for it. Change the search functionality so that when searching for `after:27/09/2019 api`, only tickets matching the word "api" created *after* 27/09/2019 will show. Add support for `before:[DATE]` and `from:[EMAIL]` as well.  
 Friendly reminder to commit and push after completing this step.
 
-c. We're showing only 20 tickets but agents can swear there are more. Solve this problem. Keep it mind the number of tickets is planned to grow exponentially very soon so make sure to think of a proper solution.  
+c. We're showing only 20 tickets but agents can swear there are more. Solve this problem. Keep in mind the number of tickets is planned to grow exponentially very soon so make sure to think of a proper solution.  
 Friendly reminder to commit and push after completing this step.
 
 ### Part 3 - Your extra touch
@@ -73,7 +73,7 @@ Friendly reminder to commit and push after completing this part.
 **If you do not have previous experience in web development, you can skip this part.**
 Otherwise, it is mandatory. 
 
-a. Add at least 3 automated tests browser using puppeteer, testing key features of your choice.
+a. Add at least 3 automated browser tests using puppeteer, testing key features of your choice.
 b. Add component tests (using `jest`) to your work from *part 1*.
 
 
