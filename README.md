@@ -64,7 +64,8 @@ Friendly reminder to commit and push after completing this step.
 ### Part 3 - Your extra touch
 Think of a small addition to this project and make it happen. If you need inspiration, you can check out our real ticketing app at https://wix.com/wixanswers and grab some ideas from there ;)
 It should involve adding something to the UI, or server (or both!).
-A good rule of thumb for the effort here is that it should not exceed the time that it took you to perform Part 2.
+A good rule of thumb for the effort here is that it should not exceed the time that it took you to perform Part 2.  
+*Please describe the feature you've added on your email back to us*
 
 *Note:* this step is also mandatory.  
 Friendly reminder to commit and push after completing this part.
@@ -84,7 +85,7 @@ b. Add component tests (using `jest`) to your work from *part 1*.
 
 ## Submitting
 
-1. add `gabrielg@wix.com`, `aaronv@wix.com`, `borisd@wix.com` & `gavrielc@wix.com` as collaborators to your imported repo.
-2. send the repo's URL back to the email you got from us.
+1. add `aaronv@wix.com`, `borisd@wix.com` & `gavrielc@wix.com` as collaborators to your imported repo.
+2. send the repo's URL back to the email you got from us. Describe your extra touch (part 3), and any general notes you may have. Can be anything from challenges to something you feel was not done perfect, to something you're specially proud of.
 
 ![good luck](https://media.giphy.com/media/12XDYvMJNcmLgQ/giphy.gif)
