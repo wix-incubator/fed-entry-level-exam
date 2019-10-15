@@ -29,6 +29,8 @@ We also have a 4th part that is only expected from those with previous commercia
 
 After each completed step, please commit and push. The commit message should be something like `Part 1a - show content`, `Part 2b - search filters`. 
 
+**Note that 1d and 2c are bonus tasks**
+
 
 ### Part 1 - Ticket item improvements
 
@@ -45,21 +47,25 @@ c. Our ticket's data *might* also contain labels (tags), but we're not making us
 ![labels](https://d2x3xhvgiqkx42.cloudfront.net/3d412e82-d97e-487e-b1a3-41a6bd24a05b/b9bd9ddb-c0bf-4b55-888e-747f0d6524c8/2019/09/27/6d307660-953a-4e00-a28d-ffbc48e68fb8/5d422571-d37c-4890-9837-4f786f1e5e10.png)  
 Friendly reminder to commit and push after completing this step.
 
-d. Step *a* wasn't enough - some tickets have long content. Add a show more / show less functionality when the content exceeds 3 lines, as following:  
+#### 1D - Bonus Task
+d. **Bonus** Step *a* wasn't enough - some tickets have long content. Add a show more / show less functionality when the content exceeds 3 lines, as following:  
 ![show more/less](https://d2x3xhvgiqkx42.cloudfront.net/3d412e82-d97e-487e-b1a3-41a6bd24a05b/b9bd9ddb-c0bf-4b55-888e-747f0d6524c8/2019/09/27/fd41c164-d566-471e-9723-e785b313845a/738cbaa0-93e8-4f02-861d-6fab92c608bd.gif)  
  Friendly reminder to commit and push after completing this step.
-
+ 
 
 ### Part 2 - List functionality
 
-a. Agents are complaining that our search functionality isn't working properly. They gave the example that when searching for "wix stores", the ticket titled "Search bar for my wix store" (id `6860d043-f551-58c8-84d6-f9e6a8cb0cb2`) is not returned. Checking the data, that ticket does exist.. Find the issue and fix it.  
+a. Agents are complaining that our search functionality isn't working properly. They gave the example that when searching for "wix store", the ticket titled "Search bar for my wix store" (id `6860d043-f551-58c8-84d6-f9e6a8cb0cb2`) is not returned. Checking the data, that ticket does exist.. Find the issue and fix it.  
 Friendly reminder to commit and push after completing this step.
 
-b. There is a need to find tickets created before/after a certain date, and our designer is on vacation to design proper UI for it. Change the search functionality so that when searching for `after:27/09/2019 api`, only tickets matching the word "api" created *after* 27/09/2019 will show. Add support for `before:[DATE]` and `from:[EMAIL]` as well.  
+b. We're showing only 20 tickets but agents can swear there are more. Solve this problem. Keep in mind the number of tickets is planned to grow exponentially very soon so make sure to think of a proper solution.  
 Friendly reminder to commit and push after completing this step.
 
-c. We're showing only 20 tickets but agents can swear there are more. Solve this problem. Keep in mind the number of tickets is planned to grow exponentially very soon so make sure to think of a proper solution.  
+
+#### 2C - Bonus Task 
+c. **Bonus** There is a need to find tickets created before/after a certain date, and our designer is on vacation to design proper UI for it. Change the search functionality so that when searching for `after:27/09/2019 api`, only tickets matching the word "api" created *after* 27/09/2019 will show. Add support for `before:[DATE]` and `from:[EMAIL]` as well.  
 Friendly reminder to commit and push after completing this step.
+
 
 ### Part 3 - Your extra touch
 Think of a small addition to this project and make it happen. If you need inspiration, you can check out our real ticketing app at https://wix.com/wixanswers and grab some ideas from there ;)
@@ -89,3 +95,5 @@ b. Add component tests (using `jest`) to your work from *part 1*.
 2. send the repo's URL back to the email you got from us. Describe your extra touch (part 3), and any general notes you may have. Can be anything from challenges to something you feel was not done perfect, to something you're specially proud of.
 
 ![good luck](https://media.giphy.com/media/12XDYvMJNcmLgQ/giphy.gif)
+
+a. Our tickets list is only showing the title. Make it show the content as well, as following:  
