@@ -1,7 +1,7 @@
-# Wix Answers FED Entry Level Exam
+# Wix FED Entry Level Exam
 
 Hi there!  
-In this exam you will extend and add new features to a simplified ticketing system. It aims to provide you a glimpse of our day-to-day work, along with some connection to [our domain (helpdesk & ticketing system)](https://www.wix.com/wixanswers/main).
+In this exam you will extend and add new features to a simplified [ticketing system](https://www.wix.com/wixanswers/main).
 The task's main purpose is to test your ability to learn new topics and deliver high quality digital products. It combines building UI components and a touch of server development as well.
 
 While no previous background is required to complete this task or to apply to this position, we do recommend getting to a basic level on the following subjects:
