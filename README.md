@@ -58,8 +58,8 @@ d. **Bonus** Step *a* wasn't enough - some tickets have long content. Add a show
 a. Agents are complaining that our search functionality isn't working properly. They gave the example that when searching for "wix store", the ticket titled "Search bar for my wix store" (id `6860d043-f551-58c8-84d6-f9e6a8cb0cb2`) is not returned. Checking the data, that ticket does exist.. Find the issue and fix it.  
 Friendly reminder to commit and push after completing this step.
 
-b. We're showing only 20 tickets but agents can swear there are more. Solve this problem.
-** Keep in mind the number of tickets is planned to grow exponentially very soon so make sure to think of a proper solution. **
+b. We're showing only 20 tickets but agents can swear there are more. Solve this problem.  
+**Keep in mind the number of tickets is planned to grow exponentially very soon so make sure to think of a proper solution.**
 Friendly reminder to commit and push after completing this step.
 
 
@@ -87,7 +87,7 @@ b. Add component tests (using `jest`) to your work from *part 1*.
 
 ## General notes
 - Test your work well. Think of edge cases. Think of how users will use it, and make sure your work is of high quality
-- Make sure to fit into the ecosystem with your solutions. Stick to the best practices of the libraries used as much as possible
+- Stick to the best practices of the libraries used as much as possible
 - This task involves both client and server code. Regardless of bonuses and part 3, in the end you should have touched both areas. If you haven't - you probably are not covering all our requirements.
 - If you have any questions regarding the task itself or its environment, feel free to ask in the exam's e-mail. For general coding / technology questions, please consult stack overflow, forums and other sources of your choice.
 
