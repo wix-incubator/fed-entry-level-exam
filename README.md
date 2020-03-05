@@ -98,5 +98,3 @@ b. Add component tests (using `jest`) to your work from *part 1*.
 2. send the repo's URL back to the email you got from us. Describe your extra touch (part 3), and any general notes you may have. Can be anything from challenges to something you feel was not done perfect, to something you're specially proud of.
 
 ![good luck](https://media.giphy.com/media/12XDYvMJNcmLgQ/giphy.gif)
-
-a. Our tickets list is only showing the title. Make it show the content as well, as following:  
