@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.scss';
-import {createApiClient, Order} from './api';
+import {createApiClient, Ticket} from './api';
 
 export type AppState = {
-	orders?: Order[],
+	tickets?: Ticket[],
 	search: string;
 }
 
@@ -13,57 +13,54 @@ export class App extends React.PureComponent<{}, AppState> {
 
 	state: AppState = {
 		search: ''
-	};
+	}
 
 	searchDebounce: any = null;
 
 	async componentDidMount() {
 		this.setState({
-			orders: await api.getOrders()
+			tickets: await api.getTickets()
 		});
 	}
 
-	renderOrders = (orders: Order[]) => {
-		const filteredOrders = orders
-			.filter((order) => (order.customer.name.toLowerCase() + order.autoIncrementedId).includes(this.state.search.toLowerCase()));
+	renderTickets = (tickets: Ticket[]) => {
 
-		return (
-			<ul className='orders'>
-				{filteredOrders.map((order) => (<li key={order.autoIncrementedId} className='order'>
-					<h5 className='title'>{order.customer.name}</h5>
-					<footer>
-						<div
-							className='meta-data'>{order.fulfillmentStatus} | {new Date(order.createdDate).toLocaleString()}</div>
-					</footer>
-				</li>))}
-			</ul>
-		);
-	};
+		const filteredTickets = tickets
+			.filter((t) => (t.title.toLowerCase() + t.content.toLowerCase()).includes(this.state.search.toLowerCase()));
 
-	onSearch = async (value: string, newPage?: number) => {
 
+		return (<ul className='tickets'>
+			{filteredTickets.map((ticket) => (<li key={ticket.id} className='ticket'>
+				<h5 className='title'>{ticket.title}</h5>
+				<footer>
+					<div className='meta-data'>By {ticket.userEmail} | { new Date(ticket.creationTime).toLocaleString()}</div>
+				</footer>
+			</li>))}
+		</ul>);
+	}
+
+	onSearch = async (val: string, newPage?: number) => {
+		
 		clearTimeout(this.searchDebounce);
 
 		this.searchDebounce = setTimeout(async () => {
 			this.setState({
-				search: value
+				search: val
 			});
 		}, 300);
-	};
+	}
 
-	render() {
-		const {orders} = this.state;
-		return (
-			<main>
-				<h1>Orders</h1>
-				<header>
-					<input type="search" placeholder="Search" onChange={(e) => this.onSearch(e.target.value)}/>
-				</header>
-				{orders ? <div className='results'>Showing {orders.length} results</div> : null}
-				{orders ? this.renderOrders(orders) : <h2>Loading...</h2>}
+	render() {	
+		const {tickets} = this.state;
 
-			</main>
-		)
+		return (<main>
+			<h1>Tickets List</h1>
+			<header>
+				<input type="search" placeholder="Search..." onChange={(e) => this.onSearch(e.target.value)}/>
+			</header>
+			{tickets ? <div className='results'>Showing {tickets.length} results</div> : null }	
+			{tickets ? this.renderTickets(tickets) : <h2>Loading..</h2>}
+		</main>)
 	}
 }
 

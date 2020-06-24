@@ -1,38 +1,25 @@
 import axios from 'axios';
 
-export type Item = {
-	id: string
-}
-
-export type Customer = {
-	name: string
-}
-
-export type BillingInfo = {
-	status: string
-}
-
-export type Order = {
+export type Ticket = {
 	id: string,
-	autoIncrementedId: number;
-	createdDate: string;
-	fulfillmentStatus: string;
-	billingInfo: BillingInfo;
-	items: Item[];
-	customer: Customer;
+	title: string;
+	content: string;
+	creationTime: number;
+	userEmail: string;
+	labels?: string[];
 }
 
 export type ApiClient = {
-	getOrders: () => Promise<Order[]>;
+	getTickets: () => Promise<Ticket[]>;
 }
 
 export const createApiClient = (): ApiClient => {
 	return {
-		getOrders: () => {
-			return axios.get(`http://localhost:3232/api/orders`).then((res) => res.data);
+		getTickets: () => {
+			return axios.get(`http://localhost:3232/api/tickets`).then((res) => res.data);
 		}
 	}
-};
+}
 
 
 

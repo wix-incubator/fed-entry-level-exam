@@ -1,6 +1,9 @@
 body {
 	font-family: 'Open Sans', sans-serif;
+
 	background-color: #f5f9fc;
+	padding-top: 100px;
+	
 	padding: 50px;
 
 	main {
@@ -8,13 +11,13 @@ body {
 		margin: 0 auto;
 	}
 
-	h1, h2 {
+	h1 {
 		font-weight: 300;
 	}
 
 	.results {
 		color: #7a92a5;
-		font-size: 14px;
+		font-size: 12px;
 		margin: 12px 5px;
 	}
 
@@ -40,6 +43,7 @@ body {
 			outline: 0;
 			transition: border .1s ease;
 			resize: none;
+			border: 1px solid #b6c1cd;
 			border: none;
 
 			&::placeholder  {
@@ -85,12 +89,12 @@ body {
 				font-style: normal;
 				color: #20455e;
 			}
-
+			
 			footer {
 
 				display: flex;
 				justify-content: space-between;
-
+				
 				.meta-data {
 					color: #7a92a5;
 					font-size: 12px;
@@ -99,7 +103,7 @@ body {
 				}
 			}
 
-
+			
 		}
 	}
 }

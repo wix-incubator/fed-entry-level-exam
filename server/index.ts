@@ -1,12 +1,12 @@
 import express from 'express';
-import bodyParser = require('body-parser');
-import {tempData} from './temp-data';
-const {products} = require('./products.json');
 
+import bodyParser = require('body-parser');
+import { tempData } from './temp-data';
 
 const app = express();
 
 const PORT = 3232;
+
 const PAGE_SIZE = 20;
 
 app.use(bodyParser.json());
@@ -18,24 +18,15 @@ app.use((_, res, next) => {
 	next();
 });
 
-app.get('/api/orders', (req, res) => {
+app.get('/api/tickets', (req, res) => {
 
-	const page: any = req.query.page || null;
-	const imageSize: any = req.query.imageSize || 'large';
+	const page = req.query.page || 1;
 
-	let orders = page ? tempData.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE) : tempData;
-
-	orders.forEach((order: any) => {
-		order.items = order.items.map((item: any) => {
-			return {id: item.id, imageUrl: products[item.id].images[imageSize]}
-		});
-	});
-
-	res.send(orders);
+	const paginatedData = tempData.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+	
+	res.send(paginatedData);
 });
 
 app.listen(PORT);
-console.log('Listening on port', PORT);
+console.log('server running', PORT)
 
-// const {generateOrders} = require('./creator');
-// generateOrders();

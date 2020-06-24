@@ -22,8 +22,6 @@
     "ts-node-dev": "^1.0.0-pre.41",
     "typescript": "^3.5.3"
   },
-  "devDependencies": {
-    "moment": "^2.27.0"
-  },
+  "devDependencies": {},
   "description": ""
 }
