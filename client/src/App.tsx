@@ -23,6 +23,15 @@ export class App extends React.PureComponent<{}, AppState> {
 		});
 	}
 
+	onRenameTicket = (ticketToRename: Ticket) => {
+		const newTitle = prompt('What do you want to rename this to?');
+		if (this.state.tickets && newTitle) {
+			const newTickets = (this.state.tickets
+				.map((ticket) => ticketToRename.id === ticket.id ? {...ticket, title: newTitle} : ticket));
+			this.setState({tickets: newTickets})
+		}
+	}
+
 	renderTickets = (tickets: Ticket[]) => {
 
 		const filteredTickets = tickets
@@ -31,7 +40,7 @@ export class App extends React.PureComponent<{}, AppState> {
 
 		return (<ul className='tickets'>
 			{filteredTickets.map((ticket) => (<li key={ticket.id} className='ticket'>
-				<h5 className='title'>{ticket.title}</h5>
+				<h5 className='title'>{ticket.title}</h5><button onClick={() => this.onRenameTicket(ticket)} >Rename</button>
 				<footer>
 					<div className='meta-data'>By {ticket.userEmail} | { new Date(ticket.creationTime).toLocaleString()}</div>
 				</footer>
