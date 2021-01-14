@@ -10,7 +10,6 @@
 	"license": "ISC",
 	"dependencies": {
 		"@fed-exam/config": "file:../configuration",
-		"@fed-exam/client": "file:../client",
 		"@types/body-parser": "^1.17.1",
 		"@types/chance": "^1.0.6",
 		"@types/express": "^4.17.1",
