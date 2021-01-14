@@ -1,7 +1,4 @@
-import {Ticket} from '@ans-exam/client/src/api';
-
-import * as fs from 'fs';
-import Chance from 'chance';
+import {Ticket} from '@fed-exam/client/src/api';
 
 const data = require('./data.json');
 

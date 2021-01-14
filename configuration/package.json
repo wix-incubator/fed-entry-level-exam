@@ -1,0 +1,14 @@
+{
+  "name": "@fed-exam/config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fed-exam/client": "file:../client"
+  },
+  "devDependencies": {},
+  "description": ""
+}
