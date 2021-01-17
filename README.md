@@ -83,6 +83,9 @@ Otherwise, it is mandatory.
 a. Add at least 3 automated browser tests using puppeteer, testing key features of your choice.
 b. Add component tests (using `jest`) to your work from *part 1*.
 
+### Part 5 - Dark Mode
+Agents use this system all day, white can be quite a tiring color on the eyes 😫.
+Add a way for the user to change the background of the UI to `black` and the basic font of the outline to `white`.
 
 ## General notes
 - Test your work well. Think of edge cases. Think of how users will use it, and make sure your work is of high quality

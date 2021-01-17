@@ -5,6 +5,7 @@ import {createApiClient, Ticket} from './api';
 export type AppState = {
 	tickets?: Ticket[],
 	search: string;
+	darkMode: boolean;
 }
 
 const api = createApiClient();
@@ -12,7 +13,8 @@ const api = createApiClient();
 export class App extends React.PureComponent<{}, AppState> {
 
 	state: AppState = {
-		search: ''
+		search: '',
+		darkMode: false
 	}
 
 	searchDebounce: any = null;
@@ -21,6 +23,18 @@ export class App extends React.PureComponent<{}, AppState> {
 		this.setState({
 			tickets: await api.getTickets()
 		});
+	}
+
+	renderDarkModeCheckbox =(darkMode: boolean) => {
+		return (<div className='darkModeCheckBox'>
+			<input id='darkMode' type='checkbox' checked={darkMode}
+				   onClick={(e) => {
+					   this.setState({
+						   darkMode: !this.state.darkMode
+					   })
+				   }}/>
+			<label htmlFor='darkMode'>Dark Mode</label>
+		</div>);
 	}
 
 	renderTickets = (tickets: Ticket[]) => {
@@ -51,9 +65,10 @@ export class App extends React.PureComponent<{}, AppState> {
 	}
 
 	render() {	
-		const {tickets} = this.state;
-
+		const {tickets, darkMode} = this.state;
+		document.body.className = darkMode ? 'darkMode' : '';
 		return (<main>
+			{this.renderDarkModeCheckbox(darkMode)}
 			<h1>Tickets List</h1>
 			<header>
 				<input type="search" placeholder="Search..." onChange={(e) => this.onSearch(e.target.value)}/>

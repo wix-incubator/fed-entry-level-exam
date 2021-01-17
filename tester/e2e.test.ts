@@ -23,31 +23,27 @@ const goToMainPage = async () => {
   //await page.screenshot({ path: 'main_page.png' });
 }
 
-describe("Titles", () => {
-
-  test('20 titles are rendered', async () => {
+describe("Dark Mode", () => {
+  test('Background is white and text is grayish without change', async () => {
     await goToMainPage();
-    const titles = await page.$$('.title')
-
-    let value = await page.evaluate(el => el.textContent, titles[0])
-    expect(titles.length).toBe(20)
+    const docBody = await page.$('body')
+    const title = await page.$('.title')
+    let pageBackGroundColor = await page.evaluate(el => getComputedStyle(el).backgroundColor,docBody)
+    let titleColor = await page.evaluate(el => getComputedStyle(el).color,title)
+    expect(pageBackGroundColor).toBe('rgb(245, 249, 252)')
+    expect(titleColor).toBe('rgb(32, 69, 94)')
   });
 
-  test('first title content is correct', async () => {
+  test('Background is black and color is white after click', async () => {
     await goToMainPage();
-    const titles = await page.$$('.title')
-
-    let value = await page.evaluate(el => el.textContent, titles[0])
-    expect(value).toBe(serverData[0].title)
+    const darkModeCheckbox = await page.$('#darkMode')
+    await darkModeCheckbox.click();
+    const docBody = await page.$('body')
+    const title = await page.$('.title')
+    let pageBackGroundColor = await page.evaluate(el => getComputedStyle(el).backgroundColor,docBody)
+    let titleColor = await page.evaluate(el => getComputedStyle(el).color,title)
+    expect(pageBackGroundColor).toBe('rgb(0, 0, 0)')
+    expect(titleColor).toBe('rgb(32, 69, 94)')
   });
-
-  test('last title content is correct', async () => {
-    await goToMainPage();
-    const titles = await page.$$('.title')
-
-    let value = await page.evaluate(el => el.textContent, titles[titles.length - 1])
-    expect(value).toBe(serverData[titles.length - 1].title)
-  });
-
 });
 
