@@ -12,19 +12,20 @@ const PAGE_SIZE = 20;
 app.use(bodyParser.json());
 
 app.use((_, res, next) => {
-	res.setHeader('Access-Control-Allow-Origin', '*');
-	res.setHeader('Access-Control-Allow-Methods', '*');
-	res.setHeader('Access-Control-Allow-Headers', '*');
-	next();
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', '*');
+  res.setHeader('Access-Control-Allow-Headers', '*');
+  next();
 });
 
 app.get(APIPath, (req, res) => {
 
-	const page = req.query.page || 1;
+  // @ts-ignore
+  const page: number = req.query.page || 1;
 
-	const paginatedData = tempData.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  const paginatedData = tempData.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
-	res.send(paginatedData);
+  res.send(paginatedData);
 });
 
 app.listen(serverAPIPort);

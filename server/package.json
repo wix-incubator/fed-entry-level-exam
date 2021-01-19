@@ -9,7 +9,7 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@fed-exam/config": "file:../configuration",
+		"@fed-exam/config": "^1.0.0",
 		"@types/body-parser": "^1.17.1",
 		"@types/chance": "^1.0.6",
 		"@types/express": "^4.17.1",
@@ -19,8 +19,8 @@
 		"express": "^4.17.1",
 		"googleapis": "^39.2.0",
 		"ts-node": "^8.3.0",
-		"ts-node-dev": "^1.0.0-pre.41",
-		"typescript": "^3.5.3"
+		"typescript": "^3.5.3",
+		"ts-node-dev": "1.1.0"
 	},
 	"description": ""
 }
