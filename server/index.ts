@@ -1,11 +1,11 @@
 import express from 'express';
-
 import bodyParser = require('body-parser');
 import { tempData } from './temp-data';
+import { serverAPIPort, APIPath } from '@fed-exam/config';
+
+console.log('starting server', { serverAPIPort, APIPath });
 
 const app = express();
-
-const PORT = 3232;
 
 const PAGE_SIZE = 20;
 
@@ -18,15 +18,15 @@ app.use((_, res, next) => {
 	next();
 });
 
-app.get('/api/tickets', (req, res) => {
+app.get(APIPath, (req, res) => {
 
 	const page = req.query.page || 1;
 
 	const paginatedData = tempData.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
-	
+
 	res.send(paginatedData);
 });
 
-app.listen(PORT);
-console.log('server running', PORT)
+app.listen(serverAPIPort);
+console.log('server running', serverAPIPort)
 
