@@ -76,14 +76,6 @@ A good rule of thumb for the effort here is that it should not exceed the time t
 *Note:* this step is also mandatory.  
 Friendly reminder to commit and push after completing this part.
 
-### Part 4 - [Previous experience only] Automated testing
-**If you do not have previous experience in web development, you can skip this part.**
-Otherwise, it is mandatory. 
-
-a. Add at least 3 automated browser tests using puppeteer, testing key features of your choice.
-b. Add component tests (using `jest`) to your work from *part 1*.
-
-
 ## General notes
 - Test your work well. Think of edge cases. Think of how users will use it, and make sure your work is of high quality
 - Stick to the best practices of the libraries used as much as possible
