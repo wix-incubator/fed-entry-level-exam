@@ -57,8 +57,11 @@ d. **Bonus** Step *a* wasn't enough - some tickets have long content. Add a show
 a. Agents are complaining that our search functionality isn't working properly. They gave the example that when searching for "wix store", the ticket titled "Search bar for my wix store" (id `6860d043-f551-58c8-84d6-f9e6a8cb0cb2`) is not returned. Checking the data, that ticket does exist.. Find the issue and fix it.  
 Friendly reminder to commit and push after completing this step.
 
-b. We're showing only 20 tickets but agents can swear there are more. Solve this problem.  
-**Keep in mind the number of tickets is planned to grow exponentially very soon so make sure to think of a proper solution.**
+b. We're doing great, the system now has more than 10M tickets but with success comes challenges and search became unbearable.
+We even had a complaint from an agent that told us he waited for a response more than 5 minutes, that's just CRAZY!
+Let's create a search mechanism on steroids.
+1.Add q query param `?superSearch=` to the `/tickets` API call and implement an *efficient* search solution, that gets a word as an input and return an array of matching tickets.
+2. Connect your client side search bar to that API call
 Friendly reminder to commit and push after completing this step.
 
 
