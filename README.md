@@ -46,7 +46,17 @@ c. Our ticket's data *might* also contain labels (tags), but we're not making us
 ![labels](https://d2x3xhvgiqkx42.cloudfront.net/3d412e82-d97e-487e-b1a3-41a6bd24a05b/b9bd9ddb-c0bf-4b55-888e-747f0d6524c8/2019/09/27/6d307660-953a-4e00-a28d-ffbc48e68fb8/5d422571-d37c-4890-9837-4f786f1e5e10.png)  
 Friendly reminder to commit and push after completing this step.
 
-#### 1D - Bonus Task
+
+d. We want to display the date of tickets that were created in the past week in a "time ago" format. Change creation date for those tickets to be displayed as the following:
+1. if it's less than 60 minutes show the minutes ago
+2. if it's less than 24 hours show the hours age
+3. otherwise show days ago
+Make sure the new date is displayed under "time-ago" className.
+Feel free to change ticket's data in order to see your change.
+BONUS: Add a tooltip with full date on hover the time ago text.
+Friendly reminder to commit and push after completing this step.
+
+#### 1E - Bonus Task
 d. **Bonus** Step *a* wasn't enough - some tickets have long content. Add a show more / show less functionality when the content exceeds 3 lines, as following:  
 ![show more/less](https://d2x3xhvgiqkx42.cloudfront.net/3d412e82-d97e-487e-b1a3-41a6bd24a05b/b9bd9ddb-c0bf-4b55-888e-747f0d6524c8/2019/09/27/fd41c164-d566-471e-9723-e785b313845a/738cbaa0-93e8-4f02-861d-6fab92c608bd.gif)  
  Friendly reminder to commit and push after completing this step.

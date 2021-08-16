@@ -1,8 +1,9 @@
 {
   "packages": [
-	"client",
-	"server",
-    "configuration"
+	  "client",
+	  "server",
+    "configuration",
+    "tester"
   ],
   "version": "0.0.0"
 }

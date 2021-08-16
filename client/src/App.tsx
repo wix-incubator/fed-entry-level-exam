@@ -23,6 +23,22 @@ export class App extends React.PureComponent<{}, AppState> {
 		});
 	}
 
+	calculateTimeAgo = (time: number) => {
+		const passedTime = Date.now() - time;
+		const minutes = Math.floor(passedTime / 60000);
+		const hours = Math.floor(minutes / 60);
+		const days = Math.floor(hours / 24);
+		if (minutes < 60) {
+			return `${minutes}m ago`;
+		}
+		if (hours < 24) {
+			return `${hours}h ago`;
+		}
+		else {
+			return `${days}d ago`
+		}
+	}
+
 	renderTickets = (tickets: Ticket[]) => {
 
 		const filteredTickets = tickets
@@ -33,7 +49,7 @@ export class App extends React.PureComponent<{}, AppState> {
 			{filteredTickets.map((ticket) => (<li key={ticket.id} className='ticket'>
 				<h5 className='title'>{ticket.title}</h5>
 				<footer>
-					<div className='meta-data'>By {ticket.userEmail} | { new Date(ticket.creationTime).toLocaleString()}</div>
+					<div className='meta-data'>By {ticket.userEmail} | <div className='time-ago'>{this.calculateTimeAgo(ticket.creationTime)}</div></div>
 				</footer>
 			</li>))}
 		</ul>);
