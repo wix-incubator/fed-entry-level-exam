@@ -15,7 +15,7 @@ While no previous background is required to complete this task or to apply to th
 1. Make sure you have a [GitHub](https://github.com) account
 2. Go [here](https://github.com/new/import) and import this repository into your account. Make sure to select the **private** option
 3. [Clone](https://try.github.io/) your new repository to your computer
-4. Make sure you have *Node.js* 14 or higher and *npm* 6 or higher installed but for best compatibility use node `v14.18.1`. (Node v16+ is not supported)
+4. Make sure you have *Node.js* 16 and *npm* 6 or higher installed but for best compatibility use node `v16.14.0`.
 5. Install the project dependencies by running `npm install` from the project's directory (using a terminal)
 6. Run the project by running `npm start`
 
