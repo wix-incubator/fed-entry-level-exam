@@ -15,7 +15,7 @@ While no previous background is required to complete this task or to apply to th
 1. Make sure you have a [GitHub](https://github.com) account
 2. Go [here](https://github.com/new/import) and import this repository into your account. Make sure to select the **private** option
 3. [Clone](https://try.github.io/) your new repository to your computer
-4. Make sure you have *Node.js* 10 or higher and *npm* 6 or higher installed
+4. Make sure you have *Node.js* 10 or higher and *npm* 6 or higher installed but for best compatibility use node `v10.24.1`. (Node v16+ is not supported)
 5. Install the project dependencies by running `npm install` from the project's directory (using a terminal)
 6. Run the project by running `npm start`
 
@@ -96,7 +96,5 @@ b. Add component tests (using `jest`) to your work from *part 1*.
 
 1. add `username: wix-fed-exam, email: students-fed-exam@wix.com` as collaborators to your imported repo.
 2. send the repo's URL back to the email you got from us. Describe your extra touch (part 3), and any general notes you may have. Can be anything from challenges to something you feel was not done perfect, to something you're specially proud of.
-
-NOTE: Windows users please review ./KNOW_WINDOWS_ISSUES.md 
 
 ![good luck](https://media.giphy.com/media/12XDYvMJNcmLgQ/giphy.gif)
